@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <em>Пожалуйста, заполните форму. Обязательные поля помечены *</em>
+    <form action="http://fe.it-academy.by/TestForm.php" method=get>
+        <fieldset><legend>Контактная информация</legend>
+            <label>Имя*<input type="text" maxlength="20" required name="name"></label>
+            <br>
+            <label>Телефон<input type="number" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" name="number"></label>
+            <br>
+            <label>Email*<input type="email" required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" name="mail"></label>
+        </fieldset>
+        <fieldset><legend>Персональная информация</legend>
+        <label>Возраст*<input type="number" required min="18" max="60" name="age"></label>
+        <br>
+        <label><select>
+            <option>Мужчина</option>
+            <option>Женщина</option>
+        </select></label>
+        <br>
+        <label>Перечислите личные качества<textarea rows="10" cols="20" name="pesonal_qualities"></textarea></label>
+        </fieldset>
+   
+        <fieldset>
+            <legend>Выберите ваших любимых животных</legend>
+        <label><input type="checkbox" name="checkbox[]" value="checkbox1">Зебра</label>
+        <label><input type="checkbox" name="checkbox[]" value="checkbox2">Кошак</label>
+        <label><input type="checkbox" name="checkbox[]" value="checkbox3">Анаконда</label>
+        <label><input type="checkbox" name="checkbox[]" value="checkbox4">Человек</label>
+        <label><input type="checkbox" name="checkbox[]" value="checkbox5">Слон</label>
+        <label><input type="checkbox" name="checkbox[]" value="checkbox6">Антилопа</label>
+        <label><input type="checkbox" name="checkbox[]" value="checkbox7">Голубь</label>
+        <label><input type="checkbox" name="checkbox[]" value="checkbox8">Краб</label>
+        <br>
+      
+        </fieldset>
+        <input type="submit" value="Отправить информацию">
+    </form>
+</body>
+</html>
