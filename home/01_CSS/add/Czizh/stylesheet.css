@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Czizh Body';
+    src: url('Czizh-Body.eot');
+    src: url('Czizh-Body.eot?#iefix') format('embedded-opentype'),
+        url('Czizh-Body.woff2') format('woff2'),
+        url('Czizh-Body.woff') format('woff'),
+        url('Czizh-Body.ttf') format('truetype'),
+        url('Czizh-Body.svg#Czizh-Body') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
