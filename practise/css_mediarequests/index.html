@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .header {
+            height: 50px;
+            background-color: rgb(136, 211, 226);
+        }
+
+        .menu {
+            width: 200px;
+            height: 340px;
+            background-color: rgb(105, 208, 105);
+            float: left;
+        }
+
+        .list {
+            margin-bottom: 20px;
+            width: 170px;
+            height: 50px;
+            background-color: yellow;
+            margin-left: 15px;
+
+        }
+
+        .banner {
+            width: 200px;
+            height: 340px;
+            background-color: rgb(105, 208, 105);
+            float: right;
+        }
+
+        .wrap {
+            background-color: blueviolet;
+            overflow: hidden;
+
+        }
+
+        .block_1 {
+            width: 160px;
+            height: 250px;
+            background-color: rgb(136, 211, 226);
+            margin-left: 20px;
+            margin-top: 20px;
+
+        }
+
+        .block_2 {
+            width: 200px;
+            height: 60px;
+            margin-left: 226px;
+            margin-top: 26px;
+
+            background-color: rgb(176, 226, 136);
+        }
+
+        .footer {
+            height: 50px;
+            background-color: rgb(136, 211, 226);
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        @media screen and (max-width: 1024px) {
+            #mn {
+                background-color:red;
+            }
+        
+        .menu{
+            float:none;
+        }
+        .banner{
+            float:none;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="wrap">
+        <div class="banner">
+            <div class="block_1"></div>
+        </div>
+
+        <div class="menu" id="mn">
+            <div class="list"></div>
+            <div class="list"></div>
+            <div class="list"></div>
+            <div class="list"></div>
+        </div>
+        <div class="block_2"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+    </div>
+</body>
+
+</html>
